@@ -197,7 +197,7 @@ const RunButton = ({ onClick, loading, disabled, icon: Icon = Sparkles, readyTex
 // ── Main App ──────────────────────────────────────────────────────
 export default function App() {
   const [tab, setTab] = useState('requirements');
-  const [backendUrl, setBackendUrl] = useState('http://localhost:8000');
+  const [backendUrl, setBackendUrl] = useState(import.meta.env.VITE_API_URL || 'http://localhost:8000');
   const [connected, setConnected] = useState(null);
   const [latency, setLatency] = useState(null);
   const [apiError, setApiError] = useState(null);

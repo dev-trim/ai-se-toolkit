@@ -1,0 +1,7 @@
+
+```text
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-se-toolkit.vercel.app/sitemap.xml
+```
